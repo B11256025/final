@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>烏野的理智-月島螢</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+                padding: 0;
+        }
+        /*手機*/
+        [class*="col-"] {
+            margin-left: 0%;
+            margin-right: 0%;
+            width: 100%;
+        }
+        @media only screen and (min-width: 600px) and (max-width: 1023px) {
+            body{
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+            /*筆電*/
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 1024px) {
+            body {
+                margin-left: 20%;
+                margin-right: 20%;
+            }
+            /*電腦*/
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            display: none; 
+        }
+        .side-menu {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .side-menu a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+        .side-menu a:hover {
+            background-color: #575757;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            font-size: 36px;
+        }
+        .open-btn {
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+            background-color: #111;
+            padding: 10px 15px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .bc {
+            width: 100%;
+            height: auto;
+            background-image: url(lll.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        body{
+            background-color: orange;          
+        }
+        .ar1{
+            background-color: #ffffffbd;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .a{
+            border: 1px solid black;
+            padding: 8px;
+            width: 100%;
+            background-color: #000000bb; /* 背景顏色 */
+            font-size: 20px;
+            font-weight: 800;
+            height: auto;
+            overflow: hidden;
+            color: white;
+        }
+        .b{
+            text-align: center;
+            font-size: xx-large;
+            color: rgb(0, 0, 0);
+            font-weight: bolder;
+        }
+        .c{
+            color: black;
+            font-size: x-large;
+            text-align: center;
+            font-weight: bolder;
+        }
+        .d{
+            font-size: x-large;
+            font-weight: bolder;
+            text-align: center;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+          }
+          
+    </style>
+    <script>
+        function openMenu() {
+                document.getElementById("menu").style.width = "250px";
+                document.getElementById("overlay").style.display = "block";
+        }
+        function closeMenu() {
+                document.getElementById("menu").style.width = "0";
+                document.getElementById("overlay").style.display = "none";
+        }
+        </script>
+</head>
+<body>
+    <header>
+        <img src="kkk.jpg" class="bc">
+    </header>
+    <div id="overlay" class="overlay" onclick="closeMenu()"></div>
+<div id="menu" class="side-menu">
+    <a href="#" class="close-btn" onclick="closeMenu()">&times;</a>
+    <a href="index.html">首頁</a>
+    <a href=#>◆喜歡的角色</a>
+    <a href="a.html">　　及川徹</a>
+    <a href="b.html">　　北信介</a>
+    <a href="c.html">　　月島螢</a>
+</div>
+<span class="open-btn" onclick="openMenu()">&#9776;</span>
+<div class="ar1">
+    <h1 class="b" style="color:coral;">我心裡第三名喜歡的角色</h1>
+    <h2 class="c">★月島 螢★</h2>
+    </div>
+    <div class="a col-12 col-s-12">
+        <h1 class="d" style="color: sandybrown;">角色經歷</h1>
+        <hr>
+　　初登場來看是"腹黑"的性格，對比賽表示隨意，但其實也意外的認真。認為世上有即使努力也做不到的事，天生的缺陷是無法彌補的。
+哥哥月島明光曾是烏野排球隊的成員，並似乎對此感到嚮往，但後來意外地發現哥哥並非如其所説是隊裏的首發球員，甚至連後補球員也不是，只是個在觀眾席上加油打勁的。覺得是因為自己的太過期待而逼迫哥哥説謊，從此大受打擊，一直成為心結。所以覺得排球不過就是個社團活動而已，不需要太認真，因為太過認真的後果之後也只會更受挫而已。
+後來在哥哥的自白下解開了心結。並在那之後、與條善寺高中比賽之前在哥哥學校的排球隊參與了訓練，之後漸漸顯出實力。
+烏野排球隊中現任隊員中身高第一的球員，一開始和日向、影山合不來，經常拿日向翔陽的身高來戲弄他。
+和山口忠是從小認識的朋友。
+接球很弱，本人曾表示討厭接球，非常善於使用假動作。
+<p></p>
+<br>
+<p></p>
+　　與音駒第一戰時，研磨説是和翔陽完全不同的類型。
+學習成績不錯，升學班的學生（和山口忠同一個班），曾在期末考前指導日向和影山的學習。
+月島螢
+在第二次東京合宿時經常被黑尾和木兔叫去幫忙攔網，並受到黑尾指導相當多的攔網技術。經常穿帶有月亮或五角星圖案的T恤，有交叉手指的小習慣。
+視力差，在IH之後得到了哥哥送的運動眼鏡，比賽中佩戴。
+在與白鳥澤學園的宮城縣預選決賽中發揮重要作用，多次協助球隊成功救下牛島若利的扣球和攔下其他攻手的進攻，在第二局的終盤甚至憑藉不斷靠自己組織的團隊防守給白鳥澤的二傳手白布賢二郎壓力，使其傳球失誤，從而成功攔下牛島若利的扣殺，成功拿下第二局。
+與白鳥澤學園的宮城決賽的最後一局對牛島攔網時小拇指根部撕裂，被迫下場治療。在醫療室包紮期間，思索回去之後應怎樣做。
+被武田老師稱為“烏野的理智”，與白鳥澤一戰後，烏養教練將他稱為這次比賽的“MVP”，台上的觀眾也讚歎於他的處變不驚。
+<p></p>
+<br>
+<p></p>
+　　春高第2輪，面對IH亞軍稻荷崎高校時，憑藉自己對日向和影山超速攻的熟悉程度，成功攔下了“高中排球界最強的雙生子宮兄弟”宮侑和宮治的複製版超速攻，發揮了重要的作用。
+春高第3輪，面對音駒高校時，憑藉自己的攔網技術、發小山口忠的跳飄發球技術和兩人想法的相互理解，被眾人稱為“相互理解的矛和盾的結合”。
+2018年時，已成為V聯盟2級球隊“仙台蛙（FRPSS）”俱樂部球員，擔任球隊的副攻手。
+計劃於2019年前往宮城縣的仙台市博物館工作。
+</div>
+<div class="a col-12 col-s-12">
+    <h1 class="d" style="color:sandybrown;">角色名言</h1>
+    <hr>
+    <h2 class="c" style="color: rgb(255, 238, 0);">「你因為焦躁不安，而露出些微破綻的這一刻，我等很久了」</h2>
+    <p></p>
+    　　月島在球場中始終是以沉著冷靜的個性打出穩穩的每一步，而他也一直認為自己在球隊中的份量當然不比其他主力選手，所以沒有特別突出的表現也沒有強大的企圖心，而他真正感受到愛上排球那一刻，也是狠狠讓隊友以及對手驚呆的時刻，即是春高與白鳥澤對賽時，他與牛島若利的攔網之鬥。一人攔下日本國家青年隊成員強勁的扣球，也紮實地提升全隊的士氣。
+    <video controls>
+        <source src="100.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="a col-12 col-s-12">
+        <h1 class="d" style="color:coral;">個人感想</h1>
+        <hr>
+    　　說實在的其實這三名角色我的喜歡程度是差不多的，作者對於月島這名角色鋪墊很長時間，從名字上看主角是日代表耀眼而我們月島代表的月代表會有屬於我發光的時候，從前面只是把排球當作社團活動，再到看著隊友們因為輸球開始拼命努力變強，
+    卻只有自己一人是沒什麼作為，那感覺就像心與身體不統一行動一般，所幸的是月島身邊一直都有一個最好的朋友山口把他給罵醒了。
+    <p></p>
+    <br>
+    <p></p>
+    <h2 class="c" style="color: rgb(255, 238, 0);">月島:「就算努力成為了厲害的選手，打進了全國總有一天還是會輸，那為甚麼還要努力呢?這麼努力又是為了得到甚麼?我就是不懂啊!」</h2>
+    <br>
+    <p></p>
+    <h2 class="c" style="color: rgb(255, 238, 0);text-align:left">山口:「除了尊嚴以外，還能是甚麼阿!」</h2>
+    <br>
+    <p></p>
+    　　在這一罵之後，月島也開始改變又或者說開始盡自己的全力了，從每次都只出80%的力，到之後每次都拚盡全力，尤其在白鳥澤一戰，是屬於月亮綻放光芒的時刻，再看到他拚盡全力攔下了全國頂尖的攻手
+    真的很感動，從漫不經心到全力拚搏，真的花了很長的時間，但也讓我們對這角色留下了不亞於主角的深刻印象。
+</body>
+</html>
